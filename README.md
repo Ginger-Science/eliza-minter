@@ -1,3 +1,17 @@
+# NFT Minter
+
+Forked from: Eliza NASA plugin. 
+
+Great video: https://www.youtube.com/watch?v=25FxjscBHuo 
+
+# TODO
+## 1. Fix Collection Generation and Minting.
+The minter is currently called by the agent, but the plugin-nft-generation seems to expect a lot of metadata and the agent does not mint an NFT.
+## 2. Update Agent Properties.
+This character is still mostly nader dabit - need to update for "Vivian Flame" our Ginger Science Editor
+## 3. Update minter properties.
+The minter needs to listen to a google folder and generate a process control NFT when a user submits a survey response. This functionality is working in the BioAgent research repo.
+
 # Eliza NASA Plugin and Tutorial
 
 This is the codebase and tutorial for building a NASA Eliza plugin.
