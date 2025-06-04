@@ -1,63 +1,81 @@
-node_modules
-/out
+# Node modules and logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+package-lock.json
 
+# Environment variables
 .env
-.env.production
-.env.local
-.env_main
-concatenated-output.ts
-embedding-cache.json
-packages/plugin-buttplug/intiface-engine
+.env.*     # .env.development, .env.local, etc.
 
-.idea
-.DS_Store
-
+# Build output
+.next/
+out/
 dist/
-# Allow models directory but ignore model files
-models/*.gguf
-pgLite/
+build/
 
-cookies.json
+# TypeScript
+*.tsbuildinfo
 
-db.sqlite
-searches/
-tweets/
+# OS-specific
+.DS_Store
+Thumbs.db
 
-*.gguf
-*.onnx
-*.wav
-*.mp3
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
+# Testing
+coverage/
+.nyc_output/
+jest.config.js
+test-results.xml
+
+# Logs and temp files
 logs/
+*.log
+*.log.*
+*.pid
+*.seed
+*.tgz
 
-test-report.json
-content_cache/
-test_data/
-tokencache/
-tweetcache/
-twitter_cookies.json
-timeline_cache.json
+# Eliza OS cache/artifacts (if any)
+.eliza/
+*.eliza-cache/
+eliza-runtime.json
 
+# Optional: Ignore generated images/files
+public/generated/
+static/generated/
+
+# Optional: Local AI/ML data
+checkpoints/
+*.ckpt
+*.weights
+*.onnx
+*.pb
+
+# Optional: Local DBs
 *.sqlite
+*.db
+*.db-journal
 
-characters/
+# Optional: Local credentials
+*.key
+*.pem
+*.crt
+*.p12
+secrets.json
+auth.json
 
-packages/core/src/providers/cache
-packages/core/src/providers/cache/*
-cache/*
-packages/plugin-coinbase/src/plugins/transactions.csv
-
-tsup.config.bundled_*.mjs
-
-.turbo
-.cursorrules
-.pnpm-store
-
-coverage
-.eslintcache
-
-agent/content
-
-eliza.manifest
-eliza.manifest.sgx
-eliza.sig
+# Optional: Upload artifacts
+uploads/
+tmp/
+temp/
+.cache/

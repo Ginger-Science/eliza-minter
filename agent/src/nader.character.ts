@@ -1,11 +1,11 @@
 import { ModelProviderName, Clients } from "@elizaos/core";
-import { nasaPlugin } from '@elizaos/plugin-nasa'
+import { nftGenerationPlugin } from '@elizaos/plugin-nft-generation'
 
 export const mainCharacter = {
     name: "sound_craft_",
-    clients: [Clients.TWITTER],
-    modelProvider: ModelProviderName.HYPERBOLIC,
-    plugins: [nasaPlugin],
+    clients: [Clients.TWITTER, Clients.DISCORD],
+    modelProvider: ModelProviderName.OPENAI,
+    plugins: [nftGenerationPlugin],
     settings: {
         voice: {
             model: "en_GB-alan-medium"
