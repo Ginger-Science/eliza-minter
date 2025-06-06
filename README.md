@@ -1,6 +1,10 @@
-# NFT Minter
+# Solana NFT Minter
 
-Forked from: Eliza NASA plugin. 
+This repo is for developing and building nft minting capabilities using the Solana plugin-nft-generation. 
+
+Hacking happens here.
+
+Forked from: Eliza NASA plugin. Nader does a great job of showing how to customize an agent and build a plugin to retrieve API data and tweet.
 
 Great video: https://www.youtube.com/watch?v=25FxjscBHuo 
 
@@ -8,9 +12,9 @@ Great video: https://www.youtube.com/watch?v=25FxjscBHuo
 ## 1. Fix Collection Generation and Minting.
 The minter is currently called by the agent, but the plugin-nft-generation seems to expect a lot of metadata and the agent does not mint an NFT.
 ## 2. Update Agent Properties.
-This character is still mostly nader dabit - need to update for "Vivian Flame" our Ginger Science Editor
+This character is still mostly nader dabit's alter ego
 ## 3. Update minter properties.
-The minter needs to listen to a google folder and generate a process control NFT when a user submits a survey response. This functionality is working in the BioAgent research repo.
+The minter needs to listen to a google folder and generate a process control NFT when a user submits a survey response. This functionality is working in the GingerBioAgent research repo, but the minter there is still not working on Solana Devnet.
 
 # Eliza NASA Plugin and Tutorial
 
